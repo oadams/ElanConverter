@@ -60,7 +60,7 @@ def get_files_from_data(root):
 
 def download_files(files, target_folder, ecologic=True, limit=None):
     target_folder = Path(target_folder)
-    target_folder.mkdir(exist_ok=True)
+    target_folder.mkdir(exist_ok=True, parents=True)
     size = len(files)
     for index, (name, files) in enumerate(files.items(), 1):
         print(f"Data {index}/{size}: {name}:")

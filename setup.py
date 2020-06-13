@@ -23,5 +23,6 @@ setup(
         'urllib.request',
         're',
         'xml.etree.ElementTree'
+        'pyyaml'
     ]
 )
